@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            background: #eaf4fc;
+            color: #355257;
+        }
+
+        /* Hero section */
+        .about-hero {
+            background: #355257;
+            color: #fff;
+            width: 100%;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 0 0 50% 50% / 0 0 10% 10%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-hero h1 { 
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Story section */
+        .about-story {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-story h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #437ba3;
+        }
+
+        .about-story p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Profile image */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #437ba3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Buttons */
+        .about-story button {
+            margin-top: 20px;
+            background-color: #71a5ca;
+        }
+
+        @media (max-width: 992px) {
+            .about-hero {
+                padding: 80px 18px;
+            }
+
+            .about-hero h1 {
+                font-size: 2.4em;
+            }
+
+            .about-hero p {
+                font-size: 1.05em;
+            }
+
+            .about-story {
+                padding: 40px 18px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .about-hero {
+                padding: 64px 16px;
+                border-radius: 0 0 30% 30% / 0 0 8% 8%;
+            }
+
+            .about-hero h1 {
+                font-size: 2em;
+            }
+
+            .about-story h2 {
+                font-size: 1.6em;
+            }
+
+            .about-story p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="logoutBtn" class="logout-btn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <h1>About Me</h1>
+            <p>Hi, I’m a passionate BSIT student with a growing interest in the IT field and in exploring new skills. Here’s a little story
+            about me..</p>
+        </section>
+    
+        <!-- Story Section -->
+        <section class="about-story">
+            <img src="images/rogen.jfif" alt="Profile Image" class="profile-img">
+            <h2>My Life</h2>
+            <p>I am Rogen S. Baguhin, 19 years old, currently studying at Caraga State University – Cabadbaran Campus (CSUCC) as a
+            first-year BSIT student. I am from Purok 5, Antonio Luna, Cabadbaran City.
+            
+            I graduated from Cabadbaran City National High School – Senior High School (CCNHS-SHS) and I am an NC II holder, having
+            passed my assessment at Candelaria Institute of Technology of Cabadbaran Inc. I also gained practical experience through
+            my work immersion at Midtown Computers and General Merchandise – Cabadbaran.</p>
+
+            <p>My Hobbies:
+            <p>Playing acoustic guitar,</p>
+            <p>Playing online video games such as CALL OF DUTY MOBILE(CODM), Mobile Legends (ML), and PUBG</p>
+            <p>that’s all. Thank you!</p>
+
+            <button onclick="window.location.href='contact.html'">Get In Touch</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        &copy; 2025 My Portfolio
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
